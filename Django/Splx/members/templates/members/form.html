@@ -1,0 +1,9 @@
+{% load qr_code %}
+<form method='POST' action="">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit" >Soumettre</button>
+</form>
+<br>
+<h3>Déja inscrit ?</h3>
+<a href={%url 'retrieve'%}><h4>Retrouver</h4></a>

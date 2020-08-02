@@ -1,0 +1,5 @@
+{% load qr_code %}
+<br>
+{% qr_from_text member.qr_token size="m" image_format="png" error_correction="L" %}
+<br>
+{{member.qr_token}}
